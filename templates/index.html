@@ -1,14 +1,14 @@
 <p>
-    {% if breed %}
-    breed you entered is {{breed}}
+    {% if drink %}
+    drink you entered is {{drink}}
     update it in the form bellow:
     {% else %}
-    please enter your breed:
+    please enter your drink:
     {% endif %}
 
 </p>
 
 <form method= "POST">
     {{ form.hidden_tag() }}
-    {{ form.breed.label}} {{form.breed()}}
+    {{ form.drink.label}} {{form.drink()}}
     {{ form.submit()}}
